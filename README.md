@@ -8,6 +8,22 @@ Claude Code skills are reusable instruction sets that Claude loads on demand whe
 
 This repo is the source of truth for skills shared across projects. Skills here can be copied or symlinked into a project's `.claude/skills/` directory or into `~/.claude/skills/` for global availability.
 
+## Installation
+
+Install a skill into your current project:
+
+```bash
+npx skills add https://github.com/B144p/infra-agent-skills --skill auto-create-skill
+```
+
+Install globally across all projects:
+
+```bash
+npx skills add https://github.com/B144p/infra-agent-skills --skill auto-create-skill --global
+```
+
+This copies the skill into `.claude/skills/` (project) or `~/.claude/skills/` (global).
+
 ## Skills
 
 | Skill | Trigger | Description |
